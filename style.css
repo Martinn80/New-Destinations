@@ -1,0 +1,428 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.showcase {
+    position: absolute;
+    right: 0;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: whitesmoke;
+    color: #fff;
+    z-index: 2;
+    transition: 0.7s;
+    overflow: scroll;
+    overflow: hidden;
+}
+
+.showcase.active {
+    right: 300px;
+}
+
+.showcase header {
+    position: absolute;
+    top: 35px;
+    left: 0;
+    width: 100%;
+    height: 10%;
+    padding: 40px 100px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.logo {
+    text-transform: uppercase;
+    /* cursor: pointer; */
+    color: lightseagreen;
+    font-size: 36px;
+}
+
+#destinationHeader {
+    width: 100vw;
+    background-image: url('/images/website-grid-10-and-3.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: solid 4px silver;
+    overflow: auto;
+}
+
+.container {
+    /* margin-top: 20%; */
+    width: 100%vw;
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 5em;
+    padding-top: 200px;
+    margin-top: 5%;
+    overflow: scroll;
+    overflow: hidden;
+}
+
+/* #bodyTwo {
+    background-image: url('images/brandi-redd-aJTiW00qqtI-unsplash.jpg');
+} */
+
+.containerTwo {
+    background-image: url('/images/brandi-redd-aJTiW00qqtI-unsplash.jpg');
+    background-size: contain;
+    width: 100%vw;
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 5em;
+    padding-top: 200px;
+    margin-top: 5%;
+    overflow: scroll;
+    overflow: hidden;
+}
+/* clean up image tags */
+.image1, .image2, .image3, .image4, .image5, .image6, .image7, .image8, .image9, .image10, .image11, .image12 {
+    display: flex;
+    flex-wrap: wrap;
+    border: silver solid 1px;
+    box-shadow: 5px 5px 5px #000000;
+    border-radius: 15px;
+    margin-top: 20%;
+    margin-bottom: 5%;
+    justify-content: space-around;
+    box-shadow: -5px 5px 5px rgb(52, 52, 52);
+
+}
+
+h4 {
+    color: black;
+    font-size: 20px;
+}
+
+.outerDiv1, .outerDiv2, .outerDiv3, .outerDiv4, .outerDiv5, .outerDiv6, .outerDiv7, .outerDiv8, .outerDiv9, .outerDiv10,.outerDiv11, .outerDiv12 {
+    font-size: 15px;
+    color: rgb(67, 67, 67);
+}
+
+.image1 {
+    background-image: url(/images/china_shanghai_yuyuan-garden-city.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.image2 {
+    background-image: url(/images/New-England-Road-Trip-Itinerary-Burlington-Vermont.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.image3 {
+    background-image: url(/images/thesandyfeet-centralasia-travel-13.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.image4 {
+    background-image: url(/images/Buda-castle-budapest.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.image5 {
+    background-image: url(/images/fun-things-to-do-in-Panama-City-Panama.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.image6 {
+    background-image: url(/images/Why_Mongolia_Is_Simply_Awesome.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.image7 {
+    background-image: url(/images/Ethiopia-Stocksy_txpf9212f48Gs1200_OriginalDelivery_34851.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.image8 {
+    background-image: url(/images/mar2018_d08_pngphoto-wr.webp);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.image9 {
+    background-image: url(/images/166326-rarotonga-the-cook-islands.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.image10 {
+    background-image: url(/images/maui-hawaii-MAUITG0221-50725a14980e4a3382eab85f50339099.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.image11 {
+    background-image: url(/images/gettyimages-159588032-e1623688005633.webp);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.image12 {
+    background-image: url(/images/image_processing20221003-4-18ka4gb.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.toggle {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    background: url('https://api.iconify.design/bx:bx-menu.svg?color=lightseagreen') no-repeat center center / contain;
+    background-position: center;
+    cursor: pointer;
+}
+
+.toggle.active {
+    background: url('https://api.iconify.design/ant-design:close-square-outlined.svg?color=lightseagreen') no-repeat center center / contain;
+    background-size: 25px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.showcase video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background-color: #a0bdc2; */
+    mix-blend-mode: overlay;
+}
+
+.overlayTwo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background-color: #a0bdc2; */
+    mix-blend-mode: overlay;
+}
+
+.text {
+    position: relative;
+    z-index: 10;
+}
+
+.text h2 {
+    font-size: 5em;
+    font-weight: 700;
+    line-height: 1em;
+    text-transform: uppercase;
+}
+
+.text h3 {
+    font-size: 4em;
+    font-weight: 400;
+    line-height: 1em;
+    text-transform: uppercase;
+    color: lightseagreen;
+}
+
+.text p {
+    font-size: 1.1em;
+    margin: 20px 0;
+    font-weight: 400;
+    max-width: 700px;
+}
+
+.text a {
+    display: inline-block;
+    font-size: 1.5em;
+    background: #fff;
+    padding: 10px 30px;
+    text-decoration: none;
+    color: #111;
+    margin-top: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.2s;
+    border-radius: 10px;
+}
+
+.text a:hover {
+    letter-spacing: 5px;
+    color: lightseagreen;
+}
+
+.social {
+    position: absolute;
+    bottom: 20px;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social li {
+    list-style: none;
+}
+
+.social li a {
+    display: inline-block;
+    margin-right: 30px;
+    padding-left: -3px;
+    transform: scale(1.5); 
+    transition: 0.3s
+}
+
+.social li a:hover {
+    transform: scale(1.8) translateY(-3px);
+    background-color: lightseagreen;
+    height: 25px;
+    width: 25px;
+    border-radius: 5px;
+}
+
+.menu {
+    background-color: 	silver;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-left: lightseagreen solid 3px;
+}
+
+.menu ul {
+    position: relative;
+    list-style: none;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    font-size: 28px;
+    color: lightseagreen;
+    font-weight: 400;
+}
+
+.menu ul li a:hover {
+    color: #111;
+}
+
+@media (min-width: 200px) {
+    .header {
+        margin-top: 40px;
+    }
+    #destinationHeader {
+        height: 225px;
+    }
+    .container {
+        margin-top: 15%;
+    }
+    .logo {
+        font-size: 2rem;
+    }
+    .toggle {
+        background-size: 35px;
+    }
+    .text h2 {
+        font-size: 2em;
+    }
+    .text p {
+        font-size: 10px;
+    }
+    .text h3 {
+        font-size: 1em;
+    }
+    h4 {
+        font-size: 15px;
+    }
+    .container {
+        column-gap: 3em;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .image1, .image2, .image3, .image4, .image5, .image6, .image7, .image8, .image9, .image10, .image11, .image12 {
+        display: flex;
+        flex-wrap: wrap;
+        height: 200px;
+        width: 145px;
+        margin-bottom: 5%;
+        margin-top: 35%;
+        justify-content: space-around;
+    }
+}
+
+@media (min-width: 700px) {
+    
+    #destinationHeader {
+        height: 300px;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    .toggle {
+        background-size: 55px;
+    }
+    .container {
+        margin-top: 15%;
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+    .showcase, 
+    .showcase header {
+        padding: 40px;
+    }
+    .text h2 {
+        font-size: 3em;
+    }
+    .logo {
+        font-size: 3.5rem;
+    }
+    .text h3 {
+        font-size: 2em;
+    }
+    .text p {
+        font-size: 14px;
+    }
+    h4 {
+        font-size: 23px;
+    }
+    .image1, .image2, .image3, .image4, .image5, .image6, .image7, .image8, .image9, .image10, .image11, .image12 {
+        display: flex;
+        flex-wrap: wrap;
+        height: 425px;
+        width: 400px;
+        margin-bottom: 5%;
+        column-gap: 5em;
+        justify-content: space-around;
+    }
+}
+
+/* ==================================== */
